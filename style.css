@@ -1,0 +1,312 @@
+/*custom styling*/
+
+.hover-down {
+    transition: 0.2s;
+}
+
+.hover-down:hover {
+    transform: translate(0, 10px);
+    cursor: pointer;
+}
+
+.hover-up {
+    transition: 0.3s;
+}
+
+.hover-up:hover {
+    transform: translate(0, -5px);
+    cursor: pointer;
+}
+
+
+/*carousel*/
+
+.shadow-effect {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #ECECEC;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
+}
+
+#customers-testimonials .shadow-effect p {
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 0 0 17px 0;
+    font-weight: 300;
+}
+
+.testimonial-name {
+    margin: -17px auto 0;
+    display: table;
+    width: auto;
+    background: #3190E7;
+    padding: 9px 35px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
+}
+
+#customers-testimonials .item {
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 80px;
+    opacity: .2;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#customers-testimonials .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1.0, 1.0, 1);
+    transform: scale3d(1.0, 1.0, 1);
+}
+
+.owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+    max-width: 90px;
+    margin: 0 auto 17px;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+#customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+    background: #E3344A;
+    transform: translate3d(0px, -50%, 0px) scale(0.7);
+}
+
+#customers-testimonials.owl-carousel .owl-dots {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+}
+
+#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+    background: #E3344A;
+    display: inline-block;
+    height: 20px;
+    margin: 0 2px 5px;
+    transform: translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width: 20px;
+}
+
+
+/*Schedule*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-header {
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 1px 1px 1px black;
+}
+
+.heading,
+.memory-date {
+    font-family: 'Questrial', sans-serif; 
+    font-size: 1.5em;
+    color: #000;
+}
+
+.text,
+.memory-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #000;
+}
+
+.placeholder {
+    background-color: #34495e;
+    height: 300px;
+    width: auto;
+}
+
+.memory-date {
+    text-align: center;
+}
+
+.memory-text {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.timeline {
+    margin: 50px 0px;
+}
+
+.memory {
+    list-style-type: none;
+    position: relative;
+    margin: 0 auto;
+    width: 6px;
+    padding-top: 50px;
+    background: #FFF;
+}
+
+.memory::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: #FFF;
+    transition: background 0.5s ease-in-out;
+}
+
+.memory.in-view::after {
+    background: #52B3D9;
+}
+
+.memory-container {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #52B3D9;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.memory-container.in-view {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+.memory-container::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.memory:nth-child(odd) .memory-container {
+    left: 45px;
+    transform: translate3d(200px, 0, 0);
+}
+
+.memory:nth-child(odd) .memory-container.in-view {
+    transform: none;
+}
+
+.memory:nth-child(odd) .memory-container::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #52B3D9 transparent transparent;
+}
+
+.memory:nth-child(even) .memory-container {
+    right: 470px;
+    transform: translate3d(-200px, 0, 0);
+}
+
+.memory:nth-child(even) .memory-container.in-view {
+    transform: none;
+}
+
+.memory:nth-child(even) .memory-container::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #52B3D9;
+}
+
+/* ---- TIMELINE RESPONSIVENESS --- */
+@media screen and (max-width: 900px) {
+    .memory-container {
+        width: 250px;
+    }
+
+    .memory:nth-child(even) .memory-container {
+        right: 320px;
+        /* 250 + 45 - 6*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .memory {
+        margin-left: 20px;
+    }
+
+    .memory-container {
+        width: calc(100vw - 91px);
+    }
+
+    .memory:nth-child(even) .memory-container {
+        left: 45px;
+    }
+
+    .memory:nth-child(even) .memory-container::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #52B3D9 transparent transparent;
+    }
+}
+
+
+/*footer*/
+
+.footlinks{
+    color: #34495e;
+}
+
+.footlinks:hover{
+    color: #E3344A;
+}
+
+
+/* Navbar */
+.navlinks{
+    color: white;
+}
+.navlinks:hover{
+    color: #E3344A !important;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+/* Navbar faq*/
+.navlinksf{
+    color: black !important;
+    font-weight: 500 !important;
+}
+.navlinksf:hover{
+    color: #E3344A !important;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
