@@ -48,7 +48,12 @@
 
 </head>
 
-<body>
+<body style="background-color: #202020;">
+
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+  
 
     <script>
         $(document).ready(function () {
@@ -120,10 +125,11 @@
         </div>
     </nav>
 
-    <div style="height: 50px;"></div>
+  
+    
 
     <div
-        style="margin: 0px;  background-image: url(assets/bg3.webp); background-color: #021723; background-repeat: no-repeat; background-repeat: repeat-x;">
+        style="margin: 0px;background-color: #202020; background-repeat: no-repeat; background-repeat: repeat-x;">
 
         <div style="height: 200px;"></div>
 
@@ -249,7 +255,7 @@
                     <br>
                     
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-md hover-up" style="background-color: #E3344A; color: white;">GOT ANY
+                        <button class="btn btn-md hover-up" style="background-color: lightseagreen; color: white;">GOT ANY
                             OTHER QUERIES?</button>
                     </div>
 
@@ -265,14 +271,7 @@
 
     </div>
 
-    <div style="background-image:url(assets/bg4.png); background-color: #021723;">
-
-        <div style="height: 250px;">
-            <img src="assets/gift.png" style="margin-left: 150px; margin-top: 20px;">
-        </div>
-
-
-    </div>
+    
 
 
     <script>
@@ -309,7 +308,7 @@
             margin: 0;
             padding: 0;
             font-family: "Hind", sans-serif;
-            background: #021723;
+            background: #202020;
             color: #4d5974;
             display: flex;
             min-height: 100vh;
@@ -324,8 +323,8 @@
         }
 
         .accordion .accordion-item {
-            border-bottom: 1px solid #021723;
-            background-color: #021723;
+            border-bottom: 1px solid #202020;
+            background-color: #202020;
             padding: 10px;
             /* border: 0.1px solid white; */
         }
@@ -429,59 +428,66 @@
             font-weight: 300;
             margin: 2em 0;
         }
+
+        #stars:after{
+            top: 0px;
+        }
+        #stars2:after{
+            top: 0px;
+        }
+        #stars3:after{
+            top: 0px;
+        }
+
     </style>
 
-    <div id="contact" class="row justify-content-center">
-        <h3 style="font-family: 'Questrial', sans-serif; text-align: center;">OpenCode</h3>
-        <hr style="width: 75%;">
-        <p style="text-align: center; font-family: 'Montserrat', sans-serif; text-align: center;">
-            CSI RAIT is one of the fastest growing tech-community in India. OpenCode is a non-profit<br>
-            project brought to you by CSI RAIT to help beginners in<br>
-            technology. Be a part, spread knowledge & happiness.</p>
+<div id="contact" class="row justify-content-center" style="background-color: #021723; color: white;">
+    <h3 style="font-family: 'Questrial', sans-serif; text-align: center; margin-top: 50px;">OpenCode</h3>
+    <hr style="width: 75%;">
+    <p style="text-align: center; font-family: 'Montserrat', sans-serif; text-align: center;">
+      CSI RAIT is one of the fastest growing tech-community in India. OpenCode is a non-profit<br>
+      project brought to you by CSI RAIT to help beginners in<br>
+      technology. Be a part, spread knowledge & happiness.</p>
 
-        <p style="text-align: center; font-size: 25px; color: #021723;">
+    <p style="text-align: center; font-size: 25px; color: #021723;">
 
-            <a href="https://csirait.in" target="_blank" style="text-decoration: none;"><img src="assets/csi-logo.png"
-                    target="_blank" class="hover-up"
-                    style="height: 25px; width: 25px; margin-bottom: 7px; margin-right: 5px;"></a>
-            <a href="https://wa.me/+917066695395?text=I%20am%20interested%20" target="_blank"
-                style="text-decoration: none;"><i class="fab fa-whatsapp footlinks hover-up"
-                    style="margin-right: 5px;"></i></a>
-            <a href="https://www.instagram.com/csi.rait/" target="_blank" style="text-decoration: none;"><i
-                    class="fab fa-instagram footlinks hover-up" style="margin-right: 5px;"></i></a>
-            <a href="https://www.youtube.com/channel/UCs8N_fX2lLsoLZj6pPPjVWQ" target="_blank"
-                style="text-decoration: none;"><i class="fab fa-youtube footlinks hover-up"
-                    style="margin-right: 5px;"></i></a>
-            <a href="https://www.facebook.com/csirait.official/" target="_blank" target="_blank"
-                style="text-decoration: none;"><i class="fab fa-facebook footlinks hover-up"
-                    style="margin-right: 5px;"></i></a>
-            <a href="https://github.com/csi-rait" target="_blank" style="text-decoration: none;"><i
-                    class="fab fa-github footlinks hover-up" style="margin-right: 5px;"></i></a>
-            <a href="https://www.linkedin.com/in/csi-rait/" target="_blank" style="text-decoration: none;"><i
-                    class="fab fa-linkedin-in footlinks hover-up" style="margin-right: 5px;"></i></a>
-            <a href="https://discord.gg/EQfTxTBnBd" target="_blank" style="text-decoration: none;"><i
-                    class="fab fa-discord footlinks hover-up" style="margin-right: 5px;"></i></a>
-            <a href="mailto:info.csirait@gmail.com" target="_blank" style="text-decoration: none;"><i
-                    class="fas fa-envelope footlinks hover-up" style="margin-right: 5px;"></i></a>
-            <a href="https://decrypt.org.in" target="_blank" style="text-decoration: none;"><img
-                    src="assets/decrypt-logo.png" class="hover-up"
-                    style="height: 25px; width: 25px; margin-bottom: 7px;"></a>
+      <a href="https://csirait.in" target="_blank" style="text-decoration: none;"><img src="assets/csi-logo.png"
+          target="_blank" class="hover-up"
+          style="height: 25px; width: 25px; margin-bottom: 7px; margin-right: 5px;"></a>
+      <a href="https://wa.me/+917066695395?text=I%20am%20interested%20" target="_blank"
+        style="text-decoration: none;"><i class="fab fa-whatsapp footlinks hover-up" style="margin-right: 5px;"></i></a>
+      <a href="https://www.instagram.com/csi.rait/" target="_blank" style="text-decoration: none;"><i
+          class="fab fa-instagram footlinks hover-up" style="margin-right: 5px;"></i></a>
+      <a href="https://www.youtube.com/channel/UCs8N_fX2lLsoLZj6pPPjVWQ" target="_blank"
+        style="text-decoration: none;"><i class="fab fa-youtube footlinks hover-up" style="margin-right: 5px;"></i></a>
+      <a href="https://www.facebook.com/csirait.official/" target="_blank" target="_blank"
+        style="text-decoration: none;"><i class="fab fa-facebook footlinks hover-up" style="margin-right: 5px;"></i></a>
+      <a href="https://github.com/csi-rait" target="_blank" style="text-decoration: none;"><i
+          class="fab fa-github footlinks hover-up" style="margin-right: 5px;"></i></a>
+      <a href="https://www.linkedin.com/in/csi-rait/" target="_blank" style="text-decoration: none;"><i
+          class="fab fa-linkedin-in footlinks hover-up" style="margin-right: 5px;"></i></a>
+      <a href="https://discord.gg/EQfTxTBnBd" target="_blank" style="text-decoration: none;"><i
+          class="fab fa-discord footlinks hover-up" style="margin-right: 5px;"></i></a>
+      <a href="mailto:info.csirait@gmail.com" target="_blank" style="text-decoration: none;"><i
+          class="fas fa-envelope footlinks hover-up" style="margin-right: 5px;"></i></a>
+      <a href="https://decrypt.org.in" target="_blank" style="text-decoration: none;"><img src="assets/decrypt-logo.png"
+          class="hover-up" style="height: 25px; width: 25px; margin-bottom: 7px;"></a>
 
-        </p>
+    </p>
 
-        <br><br><br>
+    <br><br><br>
 
-        <p style="text-align: center; color: #021723; font-family: 'Montserrat', sans-serif;">
-            Made with <i class="fas fa-heart" style="color: #E3344A;"></i> by <a href="https://csirait.in"
-                style="text-decoration: none;"><span style="color: #003399; font-weight: 700;">CSI RAIT</span></a>
-        </p>
+    <p style="text-align: center; color: white; font-family: 'Montserrat', sans-serif;">
+      Made with <i class="fas fa-heart" style="color: #E3344A;"></i> by <a href="https://csirait.in"
+        style="text-decoration: none;"><span style="color: #003399; font-weight: 700;">CSI RAIT</span></a>
+    </p>
 
-        <p
-            style="font-size: 10px; font-family: 'Montserrat', sans-serif; background-color: #021723; text-align: center; color: white; margin: 0px; padding: 5px;">
-            Copyright © 2021 | Computer Society of India, RAIT | All rights reserved
-        </p>
+    <p
+      style="font-size: 10px; font-family: 'Montserrat', sans-serif; background-color: #202020; text-align: center; color: white; margin: 0px; padding: 5px;">
+      Copyright © 2021 | Computer Society of India, RAIT | All rights reserved
+    </p>
 
-    </div>
+  </div>
 
 </body>
 

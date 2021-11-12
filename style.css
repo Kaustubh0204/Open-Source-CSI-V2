@@ -285,7 +285,7 @@
 }
 
 .footlinks:hover{
-    color: #E3344A;
+    color: #00F9FF;
 }
 
 
@@ -294,18 +294,18 @@
     color: white;
 }
 .navlinks:hover{
-    color: #E3344A !important;
+    color: #00F9FF !important;
     text-decoration: underline;
     text-underline-offset: 10px;
 }
 
 /* Navbar faq*/
 .navlinksf{
-    color: black !important;
+    color: white !important;
     font-weight: 500 !important;
 }
 .navlinksf:hover{
-    color: #E3344A !important;
+    color: #00F9FF !important;
     text-decoration: underline;
     text-underline-offset: 10px;
 }
